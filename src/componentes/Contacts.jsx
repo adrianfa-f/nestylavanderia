@@ -73,25 +73,43 @@ const ContactUs = () => {
                 {/* Canales de contacto */}
                 <RevealOnScroll delay={400}>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20 max-w-4xl mx-auto">
-                        <a href="#" className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all flex flex-col items-center">
+                        <a 
+                            href="https://wa.me/123456789" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all flex flex-col items-center"
+                        >
                             <FaWhatsapp className="text-4xl text-green-500 mb-2" />
                             <span className="font-semibold text-slate-800">WhatsApp</span>
                             <span className="text-sm text-slate-600">+1 234 567 890</span>
                         </a>
 
-                        <a href="#" className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all flex flex-col items-center">
+                        <a 
+                            href="mailto:contacto@lavanderia.com" 
+                            className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all flex flex-col items-center"
+                        >
                             <HiMail className="text-4xl text-blue-600 mb-2" />
                             <span className="font-semibold text-slate-800">Email</span>
                             <span className="text-sm text-slate-600">contacto@lavanderia.com</span>
                         </a>
 
-                        <a href="#" className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all flex flex-col items-center">
+                        <a 
+                            href="https://instagram.com/lavanderia_ok" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all flex flex-col items-center"
+                        >
                             <FaInstagram className="text-4xl text-pink-600 mb-2" />
                             <span className="font-semibold text-slate-800">Instagram</span>
                             <span className="text-sm text-slate-600">@lavanderia_ok</span>
                         </a>
 
-                        <a href="#" className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all flex flex-col items-center">
+                        <a 
+                            href="https://facebook.com/lavanderiaOK" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all flex flex-col items-center"
+                        >
                             <FaFacebook className="text-4xl text-blue-700 mb-2" />
                             <span className="font-semibold text-slate-800">Facebook</span>
                             <span className="text-sm text-slate-600">/lavanderiaOK</span>
