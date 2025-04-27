@@ -24,10 +24,10 @@ const PricingSection = () => {
                         {/* Sección Lavado y Doblado */}
                         <div className="md:w-2/3 relative px-4">
                             {/* Fondo negro estrecho */}
-                            <div className="absolute inset-y-0 inset-x-20 w-4/5 bg-black -z-10 opacity-95" />
+                            <div className="absolute inset-y-0 inset-x-8 md:inset-x-20 w-4/5 bg-black -z-10 opacity-95" />
                             
                             <div className="relative">
-                                <h3 className="text-2xl font-bold text-white pt-4 mb-8 ml-2 flex justify-center items-center gap-2">
+                                <h3 className="text-2xl font-bold text-white pt-4 mb-8 ml-2 translate-x-4 md:translate-x-0 flex justify-center items-center gap-2">
                                     <FiZap className="text-orange-400" />
                                     Lavado y Doblado Profesional
                                 </h3>
@@ -98,7 +98,7 @@ const PricingSection = () => {
                         {/* Sección Limpieza en Seco */}
                         <div className="md:w-1/3 relative px-4">
                             {/* Fondo naranja estrecho */}
-                            <div className="absolute inset-y-0 inset-x-10 w-4/5 bg-orange-400 -z-10" />
+                            <div className="absolute inset-y-0 inset-x-8 md:inset-x-10 w-4/5 bg-orange-400 -z-10" />
                             
                             
 

@@ -3,7 +3,7 @@ import { FiMenu, FiX, FiChevronDown } from 'react-icons/fi';
 import { useClickOutside } from '../Hooks/useClickOutside';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Menu = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isServicesHovered, setIsServicesHovered] = useState(false);
     const [closeTimeout, setCloseTimeout] = useState(null);
@@ -81,17 +81,18 @@ const Header = () => {
 
                 {/* Mobile Toggle */}
                 <button
-                    className="md:hidden p-2"
+                    className="md:hidden p-2 w-auto"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
-                    {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+                    {isMenuOpen ? <FiX size={20} /> : <FiMenu size={20} />}
                 </button>
 
                 {/* Mobile Menu */}
-                <div className={`md:hidden fixed inset-y-0 right-0 w-64 bg-white shadow-xl transform transition-transform duration-300 ease-in-out
-                    ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`} ref={menuRef}>
+                <div className={`md:hidden fixed inset-y-0 right-0 w-full max-w-xs bg-white shadow-xl transform transition-transform duration-300 ease-in-out ${
+                    isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+                }`} ref={menuRef}>
                     
-                    <div className="p-6 space-y-8">
+                    <div className="p-6 space-y-6">
                         <div className="flex justify-end">
                             <FiX 
                                 size={24} 
@@ -104,7 +105,7 @@ const Header = () => {
                         {['Servicios', 'Precios', 'Contacto'].map((item, index) => (
                             <div 
                                 key={index}
-                                className={`opacity-0 transform -translate-y-4 transition-all duration-300 ease-out ${
+                                className={`opacity-0 py-3 transform -translate-y-4 transition-all duration-300 ease-out ${
                                     isMenuOpen ? 'opacity-100 translate-y-0' : ''
                                 }`}
                                 style={{ transitionDelay: `${index * 75}ms` }}
@@ -129,4 +130,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Menu;

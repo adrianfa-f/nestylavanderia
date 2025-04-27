@@ -21,9 +21,9 @@ const HeroSection = () => {
     ];
 
     return (
-        <section className="relative bg-blue-600 pt-16 pb-32 md:pb-48 h-30 h-[500px] mb-64">
+        <section className="relative bg-blue-600 pt-8 pb-16 md:pb-48 h-[700px] md:h-[500px] mb-56">
             {/* Contenido Principal */}
-            <div className="container mx-auto px-4 lg:px-6 text-center">
+            <div className="container mx-auto px-4 md:px-6 text-center">
                 {/* Texto Principal */}
                 <RevealOnScroll delay={100}>
                     <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in">
@@ -49,17 +49,17 @@ const HeroSection = () => {
                 <RevealOnScroll delay={100}>
                     <div className="relative">
                         {/* Imagen desplazada a la izquierda */}
-                        <div className="relative z-10 -mb-24 md:-mb-32 -ml-8 md:-ml-12 w-full max-w-2xl mr-auto">
+                        <div className="md:relative z-10 -mb-16 md:-mb-32 w-full md:max-w-2xl mr-auto">
                             <img 
                                 src={slides[activeSlide].image}
                                 alt="Servicio de lavandería"
-                                className="rounded-xl shadow-2xl w-full object-cover h-64 md:h-96 transform translate-x-28"
+                                className="rounded-xl shadow-2xl w-full object-cover h-64 md:h-96 transform md:translate-x-28"
                             />
                         </div>
 
                         {/* Descripción estrecha y desplazada a la derecha */}
-                        <div className="relative z-20 -mt-20 md:-mt-28 ml-auto max-w-md lg:max-w-lg xl:max-w-md">
-                            <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg mx-4 transform -translate-y-40 translate-x-32 md:-translate-x-28">
+                        <div className="relative z-20 -mt-20 md:-mt-28 ml-auto md:max-w-md">
+                            <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg mx-4 transform translate-y-16 md:-translate-y-40 md:-translate-x-16">
                                 <h3 className="text-xl md:text-2xl font-bold text-blue-800 mb-2">
                                     {slides[activeSlide].title}
                                 </h3>
@@ -73,7 +73,7 @@ const HeroSection = () => {
             </div>
 
             {/* Controles de Navegación */}
-            <div className="absolute inset-x-72 bottom-8 w-96 md:bottom-16 flex z-20 justify-end gap-4 translate-x-72 translate-y-52">
+            <div className="absolute md:inset-x-72 bottom-8 md:w-96 md:bottom-16 flex z-20 justify-end gap-4 translate-x-28 translate-y-80 md:translate-x-72 md:translate-y-52">
                 <button 
                     onClick={() => setActiveSlide(prev => (prev === 0 ? slides.length - 1 : prev - 1))}
                     className="p-3 bg-blue-800 rounded-full transition-all text-white shadow-lg hover:scale-110 transform duration-300"
