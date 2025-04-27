@@ -8,7 +8,7 @@ import SEO from '../componentes/SEO';
 
 const LandingPage = () => {
     return (
-        <div>
+        <div className="w-full">
             <SEO 
                 title="Lavandería Express - Servicio Premium a Domicilio"
                 description="Servicio profesional de lavandería con recogida y entrega a domicilio. Lavado express en 24h, planchado profesional y limpieza en seco."

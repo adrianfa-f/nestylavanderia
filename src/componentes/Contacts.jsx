@@ -119,7 +119,7 @@ const ContactUs = () => {
             </div>
 
             {/* Footer */}
-            <footer className="bg-slate-800 text-white py-12">
+            <footer className="bg-slate-800 text-white py-12 max-w-[100vw] overflow-hidden">
                 <div className="container mx-auto px-4 lg:px-6">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                         {/* Columna 1 */}

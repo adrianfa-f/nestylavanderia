@@ -4,7 +4,7 @@ import { FaTshirt } from 'react-icons/fa';
 
 const PricingSection = () => {
     return (
-        <section className="py-20 bg-blue-100">
+        <section className="py-20 bg-blue-100 overflow-x-hidden">
             <div className="container mx-auto px-4 lg:px-6">
                 {/* Encabezado */}
                 <RevealOnScroll>

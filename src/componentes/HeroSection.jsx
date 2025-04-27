@@ -53,7 +53,7 @@ const HeroSection = () => {
                             <img 
                                 src={slides[activeSlide].image}
                                 alt="Servicio de lavandería"
-                                className="rounded-xl shadow-2xl w-full object-cover h-64 md:h-96 transform md:translate-x-28"
+                                className="rounded-xl shadow-2xl w-full object-cover h-64 md:h-96 md:transform md:translate-x-28"
                             />
                         </div>
 
@@ -73,7 +73,7 @@ const HeroSection = () => {
             </div>
 
             {/* Controles de Navegación */}
-            <div className="absolute md:inset-x-72 bottom-8 md:w-96 md:bottom-16 flex z-20 justify-end gap-4 translate-x-28 translate-y-80 md:translate-x-72 md:translate-y-52">
+            <div className="absolute md:inset-x-72 bottom-8 md:w-96 md:bottom-16 flex z-20 justify-end gap-4 translate-x-32 translate-y-64 md:translate-x-72 md:translate-y-52">
                 <button 
                     onClick={() => setActiveSlide(prev => (prev === 0 ? slides.length - 1 : prev - 1))}
                     className="p-3 bg-blue-800 rounded-full transition-all text-white shadow-lg hover:scale-110 transform duration-300"
